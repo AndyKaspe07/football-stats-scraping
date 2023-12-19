@@ -1,5 +1,5 @@
 import pandas as pd
-
+import datetime
 try:
     from googlesearch import search
 except ImportError:
@@ -25,8 +25,13 @@ code = get_player_code(name, surname)
 
 
 games = int(input("How many games would you like to see the stats for?"))
+today = datetime.date.today()
+thisYear = today.year
+nextYear = thisYear + 1
 
-url = "https://fbref.com/en/players/" + code + "/matchlogs/2022-2023/misc/" + name + "-" + surname + "-Match-Logs"
+
+url = "https://fbref.com/en/players/" + code + "/matchlogs/" + str(thisYear) + "-" + str(nextYear) + "/misc/" + name + "-" + surname + "-Match-Logs"
+
 
 
 stats = pd.read_html(url)
