@@ -19,8 +19,6 @@ def get_player_code(name, surname):
 name = input("Enter players' first name") 
 surname = input("Enter players' second name")
 
-
-
 code = get_player_code(name, surname)
 
 
