@@ -10,3 +10,5 @@ Main.py holds the entire code.
 
 ## Example of an interaction with the program
 ![image](https://github.com/AndyKaspe07/players-fouls-history/assets/138991626/db5f5cd4-cd77-4353-b806-c6a5cc52c255)
+
+All stastics displayed is scraped from **https://fbref.com/en/**
